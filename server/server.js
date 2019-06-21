@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.use(logger);
 
 // Set up static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/dist/LCSS')));
 
 // Members API Routes
 app.use('/api/games', require('./routes/api/games'));
