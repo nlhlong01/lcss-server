@@ -1,14 +1,12 @@
 const express = require('express');
 const path = require('path');
-const games = require('./games');
-const moment = require('moment');
 const logger = require('./middleware/logger');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Init middleware
 app.use(logger);
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set up static folder
 app.use(express.static(path.join(__dirname, 'public/dist/LCSS')));

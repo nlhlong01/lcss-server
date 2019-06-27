@@ -1,15 +1,17 @@
 const games = [
     {
         id: 1,
+        rating: 0,
         name: 'PUBG',
         description: 'foo',
-        star: "0"
+        comment: [ "This game is perfect", "No!!! It must be super perfect!!! <3", "This game is perfect", "No!!! It must be super perfect!!! <3", "This game is perfect", "No!!! It must be super perfect!!! <3"]
     },
     {
         id: 2,
+        rating: 0,
         name: 'Dota',
         description: 'foobar',
-        star: 0
+        comment: [ "This game is perfect", "No!!! It must be super perfect!!! <3", "This game is perfect", "No!!! It must be super perfect!!! <3", "This game is perfect", "No!!! It must be super perfect!!! <3"]
     }
 ];
 
