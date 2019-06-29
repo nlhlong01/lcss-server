@@ -1,12 +1,14 @@
 const express = require('express');
 const path = require('path');
 const logger = require('./middleware/logger');
+const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(logger);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Set up static folder
 app.use(express.static(path.join(__dirname, 'public/dist/LCSS')));
