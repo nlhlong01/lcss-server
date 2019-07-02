@@ -1,6 +1,4 @@
 const express = require('express');
-const games = require('../../games');
-const pgp = require('pg-promise');
 const Pool = require('pg').Pool;
 
 const router = express.Router();
