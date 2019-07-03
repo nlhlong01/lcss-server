@@ -4,7 +4,7 @@ const Pool = require('pg').Pool;
 const router = express.Router();
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: '35.246.141.86',
     database: 'goodgamedb',
     password: 'password',
     port: 5432,
